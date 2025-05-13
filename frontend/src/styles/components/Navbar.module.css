@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #333;
+}
+
+.navbar .logo , .navbar .icon{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar .logo:hover ,.navbar .icon:hover{
+    color: #387a83;
+}
