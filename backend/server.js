@@ -1,12 +1,15 @@
 import express from 'express';
 import {connectDB} from './lib/db.js';
 import dotenv from 'dotenv';
+import productRoutes from './routes/product.route.js';
 
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
+
+app.use('/api/products', productRoutes);
 
 const PORT = process.env.PORT || 5000;
 
